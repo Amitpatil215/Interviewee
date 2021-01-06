@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
+import 'package:flutter_screenutil/screenutil.dart';
+import './Constants/routs.dart';
 import '././Screen/Home/home_screen.dart';
 import './Theme/theme_data.dart';
 
@@ -13,7 +16,16 @@ class MyApp extends StatelessWidget {
       title: 'Interviewee',
       debugShowCheckedModeBanner: false,
       theme: themeData,
-      home: HomeScreen(),
+      home: StreamBuilder<Object>(
+          stream: null,
+          builder: (context, snapshot) {
+            ScreenUtil.init(BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width,
+              maxHeight: MediaQuery.of(context).size.height,
+            ));
+            return HomeScreen();
+          }),
+      routes: RouteTable,
     );
   }
 }

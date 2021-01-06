@@ -4,13 +4,15 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:interviewee/Controller/Interviwee_controller.dart';
 
-class ProfilePicNameEmail extends StatelessWidget {
+class ProfilePicNameLevel extends StatelessWidget {
+  final InterviweeController _intervieweeController =
+      Get.put(InterviweeController());
   @override
   Widget build(BuildContext context) {
-    final InterviweeController _intervieweeController =
-        Get.put(InterviweeController());
     final String _name = _intervieweeController.interviwee.value.name;
-    final String _email = _intervieweeController.interviwee.value.email;
+    final int _mockCount = _intervieweeController.interviwee.value.mockCount;
+    final String _profImageUrl =
+        _intervieweeController.interviwee.value.profileImageUrl;
     return ListTile(
       leading: CircleAvatar(
         maxRadius: 70,
@@ -18,7 +20,7 @@ class ProfilePicNameEmail extends StatelessWidget {
           tag: "ProfileHeroKey",
           child: ClipOval(
             child: SvgPicture.asset(
-              "assets/images/male.svg",
+              _profImageUrl,
             ),
           ),
         ),
@@ -30,7 +32,7 @@ class ProfilePicNameEmail extends StatelessWidget {
         ),
       ),
       subtitle: Text(
-        _email,
+        _mockCount.toString(),
       ),
     );
   }

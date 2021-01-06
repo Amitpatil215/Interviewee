@@ -6,5 +6,7 @@ class InterviweeController extends GetxController {
   final interviwee = Interviewee(
     name: 'Amit Patil',
     email: 'amitgpatil215@gmail.com',
+    phone: 7775956802,
+    mockCount: 0,
   ).obs;
 }

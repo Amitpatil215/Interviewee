@@ -5,6 +5,7 @@ ThemeData themeData = ThemeData(
   appBarTheme: AppBarTheme(
     color: Colors.white,
     titleTextStyle: TextStyle(color: Colors.black),
+    iconTheme: IconThemeData(color: Colors.black),
     brightness: Brightness.light,
     elevation: 0,
   ),
