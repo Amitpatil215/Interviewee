@@ -27,10 +27,10 @@ class ASAppointmentTile extends StatelessWidget {
               children: [
                 Container(
                   height: 150.h,
-                  width: 0.74.w,
+                  //width: 0.7.w,
                   margin: EdgeInsets.only(left: 30.w),
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Colors.blue,
                     borderRadius: BorderRadius.circular(30),
                   ),
                   child: Column(
@@ -69,7 +69,7 @@ class ASAppointmentTile extends StatelessWidget {
                               Container(
                                 width: 190.w,
                                 child: Text(
-                                  "Meeting with Dr. Duva mmmmmmmmm",
+                                  "Meeting with Dr. Duva ",
                                   overflow: TextOverflow.clip,
                                   maxLines: 1,
                                   softWrap: false,
@@ -100,7 +100,7 @@ class ASAppointmentTile extends StatelessWidget {
                                     Icon(Icons.phone),
                                     Expanded(
                                       child: Text(
-                                        "Telecomunication mmmmmmmmmmmmmmmmmmmmmmm",
+                                        "Telecomunication ",
                                         overflow: TextOverflow.ellipsis,
                                       ),
                                     )

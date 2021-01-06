@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:interviewee/Screen/MyAppointment/widget/appointment_tab_bar.dart';
+import 'package:interviewee/Screen/MyAppointment/widget/appoint_s_appointment_title.dart';
 //import '../../widgets/appoint_s_widgets/appoint_s_Tab_Bar.dart';
 
 class AppointmentScreen extends StatelessWidget {
@@ -12,14 +12,17 @@ class AppointmentScreen extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: Text(
-            "My Appointments",
+            "Interviews",
             style: TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
-        body: AppointSTabBar(),
+        body: ListView.builder(
+          itemCount: 8,
+          itemBuilder: (context, index) => ASAppointmentTile(),
+        ),
       ),
     );
   }

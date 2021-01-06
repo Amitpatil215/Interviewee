@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../Screen/Notification/notification_tab.dart';
-import '../../Screen/Notification/search_tab_screen.dart';
+import '../SearchTab/search_tab_screen.dart';
 import '../../Screen/HomeTab/home_tab_screen.dart';
 import '../../Screen/ProfileTab/profile_tab_screen.dart';
 
@@ -30,6 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+
         elevation: 20,
         currentIndex: _currIndex,
         type: BottomNavigationBarType.fixed,

@@ -16,7 +16,7 @@ class MyAppointmnetButton extends StatelessWidget {
           ),
           height: 50,
           width: double.infinity,
-          child: Center(child: Text("My Appointments")),
+          child: Center(child: Text("Interviews")),
         ),
         color: Colors.white,
         elevation: 8,
