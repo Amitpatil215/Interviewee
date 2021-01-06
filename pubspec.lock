@@ -130,20 +130,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_screenutil:
-    dependency: "direct main"
-    description:
-      name: flutter_screenutil
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.0.2+3"
-  flutter_svg:
-    dependency: "direct main"
-    description:
-      name: flutter_svg
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.20.0-nullsafety.3"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -154,13 +140,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  get:
-    dependency: "direct main"
-    description:
-      name: get
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.24.0"
   glob:
     dependency: transitive
     description:
@@ -243,20 +222,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.0-nullsafety.3"
-  path_drawing:
-    dependency: transitive
-    description:
-      name: path_drawing
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.5.0-nullsafety.0"
-  path_parsing:
-    dependency: transitive
-    description:
-      name: path_parsing
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.0-nullsafety.0"
   pedantic:
     dependency: transitive
     description:
@@ -264,13 +229,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.0-nullsafety.3"
-  petitparser:
-    dependency: transitive
-    description:
-      name: petitparser
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.0.0-nullsafety.1"
   platform:
     dependency: transitive
     description:
@@ -416,13 +374,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
-  xml:
-    dependency: transitive
-    description:
-      name: xml
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.0.0-nullsafety.1"
   yaml:
     dependency: transitive
     description:
@@ -432,4 +383,3 @@ packages:
     version: "2.2.1"
 sdks:
   dart: ">=2.12.0-0.0 <3.0.0"
-  flutter: ">=1.24.0-7.0 <2.0.0"
