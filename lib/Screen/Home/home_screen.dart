@@ -30,7 +30,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-
         elevation: 20,
         currentIndex: _currIndex,
         type: BottomNavigationBarType.fixed,
