@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:interviewee/Screen/MyAppointment/widget/appoint_s_appointment_title.dart';
+import 'package:interviewee/Screen/Interviews/widget/each_interview_tile.dart';
 //import '../../widgets/appoint_s_widgets/appoint_s_Tab_Bar.dart';
 
 class AppointmentScreen extends StatelessWidget {
@@ -21,7 +21,7 @@ class AppointmentScreen extends StatelessWidget {
         ),
         body: ListView.builder(
           itemCount: 8,
-          itemBuilder: (context, index) => ASAppointmentTile(),
+          itemBuilder: (context, index) => EachInterViewTile(),
         ),
       ),
     );

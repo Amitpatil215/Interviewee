@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:interviewee/Screen/MyAppointment/my_appointment_screen.dart';
+import 'package:interviewee/Screen/Interviews/interviews_screen.dart';
 
 class MyAppointmnetButton extends StatelessWidget {
   @override
