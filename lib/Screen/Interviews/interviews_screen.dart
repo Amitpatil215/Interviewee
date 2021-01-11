@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:interviewee/Screen/Interviews/widget/each_interview_tile.dart';
-//import '../../widgets/appoint_s_widgets/appoint_s_Tab_Bar.dart';
+import '.././Interviews/widget/each_interview_tile.dart';
 
 class AppointmentScreen extends StatelessWidget {
   static const routName = '/appointment';

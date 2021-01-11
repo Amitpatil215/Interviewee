@@ -64,6 +64,9 @@ linter:
     # Conflicts with disabling `implicit-dynamic`
     avoid_annotating_with_dynamic: false
 
+    # Always import relative path
+    prefer_relative_imports: true
+
     # Not nessecary for an application and more pointed towards public API's
     public_member_api_docs: flase
 

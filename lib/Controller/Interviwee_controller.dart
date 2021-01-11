@@ -1,6 +1,6 @@
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
-import 'package:interviewee/Model/Interviewee.dart';
+import '../Model/Interviewee.dart';
 
 class InterviweeController extends GetxController {
   final interviwee = Interviewee(

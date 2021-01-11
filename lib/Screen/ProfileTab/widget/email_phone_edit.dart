@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
-import 'package:interviewee/Controller/Interviwee_controller.dart';
+import '../../../Controller/Interviwee_controller.dart';
 
 class EmailPhoneEdit extends StatelessWidget {
   final InterviweeController _intervieweeController =

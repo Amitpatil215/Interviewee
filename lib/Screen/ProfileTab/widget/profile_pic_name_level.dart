@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
-import 'package:interviewee/Controller/Interviwee_controller.dart';
+import '../../../Controller/Interviwee_controller.dart';
 
 class ProfilePicNameLevel extends StatelessWidget {
   final InterviweeController _intervieweeController =
