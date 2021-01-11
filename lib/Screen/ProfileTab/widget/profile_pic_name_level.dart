@@ -9,31 +9,33 @@ class ProfilePicNameLevel extends StatelessWidget {
       Get.put(InterviweeController());
   @override
   Widget build(BuildContext context) {
-    final String _name = _intervieweeController.interviwee.value.name;
-    final int _mockCount = _intervieweeController.interviwee.value.mockCount;
-    final String _profImageUrl =
-        _intervieweeController.interviwee.value.profileImageUrl;
     return ListTile(
       leading: CircleAvatar(
         maxRadius: 70,
         child: Hero(
           tag: "ProfileHeroKey",
           child: ClipOval(
-            child: SvgPicture.asset(
-              _profImageUrl,
-            ),
+            child: Obx(() {
+              return SvgPicture.asset(
+                _intervieweeController.interviwee.value.profileImageUrl,
+              );
+            }),
           ),
         ),
       ),
-      title: Text(
-        _name,
-        style: TextStyle(
-          fontSize: 20,
-        ),
-      ),
-      subtitle: Text(
-        _mockCount.toString(),
-      ),
+      title: Obx(() {
+        return Text(
+          _intervieweeController.interviwee.value.name,
+          style: TextStyle(
+            fontSize: 20,
+          ),
+        );
+      }),
+      subtitle: Obx(() {
+        return Text(
+          _intervieweeController.interviwee.value.mockCount.toString(),
+        );
+      }),
     );
   }
 }

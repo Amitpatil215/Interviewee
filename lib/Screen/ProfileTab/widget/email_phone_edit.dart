@@ -8,9 +8,6 @@ class EmailPhoneEdit extends StatelessWidget {
       Get.put(InterviweeController());
   @override
   Widget build(BuildContext context) {
-    final String _email = _intervieweeController.interviwee.value.email;
-    final int _phone = _intervieweeController.interviwee.value.phone;
-
     return Container(
       margin: EdgeInsets.symmetric(vertical: 2, horizontal: 40),
       child: Row(
@@ -27,7 +24,9 @@ class EmailPhoneEdit extends StatelessWidget {
                   SizedBox(
                     width: 10,
                   ),
-                  Text(_email)
+                  Obx(() {
+                    return Text(_intervieweeController.interviwee.value.email);
+                  }),
                 ],
               ),
               SizedBox(
@@ -39,7 +38,10 @@ class EmailPhoneEdit extends StatelessWidget {
                   SizedBox(
                     width: 10,
                   ),
-                  Text(_phone.toString()),
+                  Obx(() {
+                    return Text(_intervieweeController.interviwee.value.phone
+                        .toString());
+                  }),
                 ],
               ),
             ],
